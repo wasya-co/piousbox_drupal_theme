@@ -1,0 +1,7 @@
+name: piousbox_drupal_theme
+type: theme
+description: piousbox_drupal_theme
+core_version_requirement: ^8 || ^9
+base theme: ish_drupal_theme
+libraries:
+  - piousbox_drupal_theme/base
