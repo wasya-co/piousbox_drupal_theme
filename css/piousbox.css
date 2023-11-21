@@ -1,14 +1,1 @@
-/* R */
-.region-header {
-  margin-top: 50px;
-  flex-direction: column;
-  text-align: center; }
-
-/* S */
-.site-name {
-  text-align: center; }
-
-/* V */
-.view-_023q3-scrum-view .view-content {
-  display: flex;
-  flex-wrap: wrap; }
+.region-header{margin-top:50px;flex-direction:column;text-align:center}.site-name{text-align:center}.view-_023q3-scrum-view .view-content{display:flex;flex-wrap:wrap}
