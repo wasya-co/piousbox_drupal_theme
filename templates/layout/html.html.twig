@@ -1,10 +1,10 @@
 
 {%
   set body_classes = [
-    logged_in ? 'user-logged-in',
+    logged_in     ? 'user-logged-in',
     not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
-    node_type ? 'page-node-type-' ~ node_type|clean_class,
-    db_offline ? 'db-offline',
+    node_type     ? 'page-node-type-' ~ node_type|clean_class,
+    db_offline    ? 'db-offline',
   ]
 %}
 <!DOCTYPE html>
@@ -16,6 +16,8 @@
     <link rel="preload" href="/themes/ish_drupal_theme/vendor/css/bootstrap%404.5.2.min.css?s41483" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/themes/ish_drupal_theme/vendor/css/bootstrap%404.5.2.min.css?s41483"></noscript>
 
+    <link rel="preload" href="/themes/ish_drupal_theme/vendor/css/fa-6.5.2-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/themes/ish_drupal_theme/vendor/css/fa-6.5.2-all.min.css"></noscript>
 
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
@@ -37,38 +39,9 @@
     </script>
     <!--/Matomo-->
 
-    <!--Mautic-->
-    <script type="text/javascript">
-      /** This section is only needed once per page if manually copying **/
-      if (typeof MauticSDKLoaded == 'undefined') {
-          var MauticSDKLoaded = true;
-          var head            = document.getElementsByTagName('head')[0];
-          var script          = document.createElement('script');
-          script.type         = 'text/javascript';
-          script.src          = '//mautic.wasya.co/media/js/mautic-form.js?v09d272bb';
-          script.onload       = function() {
-              MauticSDK.onLoad();
-          };
-          head.appendChild(script);
-          var MauticDomain = '//mautic.wasya.co';
-          var MauticLang   = {
-              'submittingMessage': "Please wait..."
-          }
-      }else if (typeof MauticSDK != 'undefined') {
-          MauticSDK.onLoad();
-      }
-    </script>
-    <!--/Mautic-->
-
   </head>
   <body{{ attributes.addClass(body_classes) }}>
-    {#
-      Keyboard navigation/accessibility link to main content section in
-      page.html.twig.
-    #}
-    <a href="#main-content" class="visually-hidden focusable skip-link">
-      {{ 'Skip to main content'|t }}
-    </a>
+    <a href="#main-content" class="visually-hidden focusable skip-link">{{ 'Skip to main content'|t }}</a>{# Keyboard navigation/accessibility #}
     {{ page_top }}
     {{ page }}
     {{ page_bottom }}
