@@ -1,0 +1,66 @@
+
+<div class="layout-container">
+  {{ page.preheader }}
+  <div class='headerW'>
+    <header role="banner">
+      {{ page.header }}
+    </header>
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
+  </div>
+
+  {{ page.breadcrumb }}
+
+  {{ page.highlighted }}
+
+  {{ page.help }}
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>
+
+    {% if page.filters %}
+      <aside class="layout-filters" role="complementary">
+        {{ page.filters }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+        {{ page.footer }}
+    </footer>
+  {% endif %}
+
+  {% if page.postfooter %}
+    <footer role="contentinfo" class="layout-postfooter" >
+      <div class='maxwidth'>
+        {{ page.postfooter }}
+      </div>
+    </footer>
+  {% endif %}
+
+  {# <footer class='footer-3' >
+    <div class='container'>
+      Copyright (c) Wasya Co 2023
+      <a href="/user/login">[lock]</a>
+    </div>
+  </footer> #}
+
+</div>
