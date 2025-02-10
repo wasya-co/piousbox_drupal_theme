@@ -16,6 +16,7 @@
 %}
 
 
+{# {{ dump( items[0].content ) }} #}
 
 <div{{ attributes.addClass(classes) }}>
   <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
@@ -23,9 +24,8 @@
 
       {% for item in items %}
         <div class="col-12 col-md-3"><div class="Card" >
-          {# {{ dump( item.content['#url'].uri ) }} #}
 
-          <img src="{{ item.content['#url'] }}" /><br />
+          {{ item.content }}
           <label><a href="{{ item.content['#url'] }}">{{ item.content['#url'].uri | split('/') | last }}</a></label>
 
         </div></div>
