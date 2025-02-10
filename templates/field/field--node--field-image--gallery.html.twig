@@ -1,0 +1,37 @@
+
+{%
+  set classes = [
+    'GalleryPhotos',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    label_display == 'inline' ? 'clearfix',
+  ]
+%}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+
+
+
+<div{{ attributes.addClass(classes) }}>
+  <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+    <div class="container row">
+
+      {% for item in items %}
+        <div class="col-12 col-md-3"><div class="Card" >
+          {# {{ dump( item.content['#url'].uri ) }} #}
+
+          <img src="{{ item.content['#url'] }}" /><br />
+          <label><a href="{{ item.content['#url'] }}">{{ item.content['#url'].uri | split('/') | last }}</a></label>
+
+        </div></div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
