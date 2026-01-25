@@ -32,13 +32,16 @@
 
 /* O */
 
-/* object3d */
+/* object3d, * Scene3d */
 
 body.page-node-type-object3d,
 body.page-node-type-object3d .layout-content {
   background: #666;
 }
 
+body.page-node-type-scene3d {
+  overflow: hidden;
+}
 
 /* R */
 
