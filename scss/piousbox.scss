@@ -1,16 +1,17 @@
 
-body {
-  background: #ccc;
-}
+@import "./dark.scss";
+@import "./light.scss";
+
+
 
 /* B */
 
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
 /* C */
 
-.Card,
-.Teaser {
-  background: white;
-}
 
 /* E */
 
@@ -26,7 +27,7 @@ body {
 
 /* H */
 
-.headerW {
+#block-mainheader2025q1 {
   // background-color: #bfbfbf;
   // background-image: url('https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2025/09/29180558/200x200-piousbox-favicon.png');
   background-image: url('https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2024/11/18145302/300x300_piousbox-logo-bw.png');
@@ -35,19 +36,30 @@ body {
   background-position: 25% center;
   background-size: 200px;
 
+  margin-top: 50px;
+  flex-direction: column;
+  text-align: center;
+
+
   a {
     // background-color: white;
     padding: 0.2em;
   }
 }
 
+#block-mainheader2026q1 {
+  .row > .col-md-4:first-child {
+    background-image: url('https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2026/04/26131255/2026q1-piousbox-logo-merged.350x-tiny.png');
+    background-repeat: no-repeat;
+    background-position: 25% center;
+    // background-size: 200px;
+  }
+}
 
 /* R */
 
 .region-footer {
-  // background: #ffd480;
-  // background: #999999;
-  // background: #bfbfbf;
+
 
   .block-language ul.links,
   .menu--issues ul.menu,
@@ -73,11 +85,7 @@ body {
   }
 }
 
-.region-header {
-  margin-top: 50px;
-  flex-direction: column;
-  text-align: center;
-}
+
 
 /* S */
 
