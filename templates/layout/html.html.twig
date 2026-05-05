@@ -13,39 +13,14 @@
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
 
-    <link rel="preload" href="/themes/ish_drupal_theme/vendor/css/bootstrap%404.5.2.min.css?s41483" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/themes/ish_drupal_theme/vendor/css/bootstrap%404.5.2.min.css?s41483"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"></noscript>
 
-    <link rel="preload" href="/themes/ish_drupal_theme/vendor/css/fa-6.5.2-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/themes/ish_drupal_theme/vendor/css/fa-6.5.2-all.min.css"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
 
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
-
-
-    <!--Matomo-->
-    <script>
-      var _paq = window._paq = window._paq || [];
-      // cid
-      var queryString = window.location.search;
-      var urlParams = new URLSearchParams(queryString);
-      var cid = urlParams.get('cid')
-      if (cid) {
-        _paq.push(['setUserId', cid]);
-      }
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//analytics.wasya.co/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '8']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!--/Matomo-->
-
 
     <!-- sharethis --><script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=665cfa9cfef97000199a5e23&product=inline-share-buttons&source=platform" async="async"></script>
 
@@ -61,7 +36,7 @@
 
     <!-- Import maps polyfill -->
     <!-- Remove this when import maps will be widely supported -->
-    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    {# <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
     <script type="importmap">
       {
         "imports": {
@@ -71,14 +46,16 @@
         }
       }
     </script>
-    <link rel="stylesheet" href="/themes/ish_drupal_theme/vendor/threejs/custom/touch-pad.css">
+    <link rel="stylesheet" href="/themes/ish_drupal_theme/vendor/threejs/custom/touch-pad.css"> #}
 
-{# <style>
-  body {
-    background: #1e4764;
-    color: #f5f7fa;
-  }
-</style> #}
+    {# <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+      }
+    }
+    </script> #}
 
   </head>
   <body{{ attributes.addClass(body_classes) }}>

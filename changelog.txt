@@ -2,4 +2,4 @@
 0.1.0 :: 2026-01-25 :: lets implement threejs-fps, and scene3d
 1.0.0 :: 2026-04-26 :: ^10
                        and dark theme
-
+1.0.1 :: 2026-05-05 :: no more dependency on ish_drupal_theme (but threejs is broken)
