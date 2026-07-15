@@ -1,1 +1,195 @@
-html.dark{--bg-0: #1e4867;--bg: #547a95;--bg-2: #70a3c7;--text: #f5f7fa;--text-muted: #c9d4df;--primary: #7cc4ff;--primary-1: #a6ddff;--primary-2: #c4dfef;--border: rgba(255, 255, 255, 0.12);--shadow: rgba(0, 0, 0, 0.35);--success: #4ade80;--warning: #fbbf24;--error: #fb7185}html.dark body{margin:0;background:var(--bg-0);color:var(--text);font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;line-height:1.6}html.dark h1,html.dark h2,html.dark h3,html.dark h4,html.dark h5,html.dark h6{color:var(--text);font-weight:600}html.dark p{color:var(--text)}html.dark a{color:var(--primary);text-decoration:none;transition:color 0.2s ease, text-decoration 0.2s ease}html.dark a.is-active{color:var(--primary-2)}html.dark a:hover{color:var(--primary-1);text-decoration:underline}html.dark a:visited{color:var(--primary-1)}html.dark section,html.dark article,html.dark aside{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:16px;box-shadow:0 6px 18px var(--shadow)}html.dark article.node--type-issue,html.dark article.node--type-advanced-page{background:var(--bg-0);border:0;box-shadow:none}html.dark .card{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:16px}html.dark button{background:var(--primary);color:#062033;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:600;transition:background 0.2s ease}html.dark button:hover{background:var(--primary-1)}html.dark img{border-radius:5px}html.dark input,html.dark textarea,html.dark select{background:var(--bg-2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:10px;outline:none}html.dark input:focus,html.dark textarea:focus,html.dark select:focus{border-color:var(--primary);box-shadow:0 0 0 2px rgba(124,196,255,0.25)}html.dark ::placeholder{color:var(--text-muted)}html.dark ul,html.dark ol{color:var(--text)}html.dark table{width:100%;border-collapse:collapse;background:var(--bg);border-radius:10px;overflow:hidden}html.dark th,html.dark td{border:1px solid var(--border);padding:10px;color:var(--text)}html.dark th{background:var(--bg-2)}html.dark code{background:rgba(0,0,0,0.35);padding:2px 6px;border-radius:6px;color:#d6f0ff}html.dark pre{background:#0f2b3d;padding:12px;border-radius:10px;overflow-x:auto;color:#e6f2ff}html.dark hr{border:none;border-top:1px solid var(--border)}html.dark .text-muted{color:var(--text-muted)}html.dark ::-webkit-scrollbar{width:10px}html.dark ::-webkit-scrollbar-track{background:var(--surface)}html.dark ::-webkit-scrollbar-thumb{background:#2f6a8f;border-radius:10px}html.dark ::-webkit-scrollbar-thumb:hover{background:#3f86b3}html:not(.dark) body{background:#fff6e8}html:not(.dark) .Card,html:not(.dark) .Teaser{background:white}.border-bottom{border-bottom:1px solid black}.GalleryPhotos .Card label{word-break:break-word}#block-mainheader2025q1{background-image:url("https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2024/11/18145302/300x300_piousbox-logo-bw.png");background-repeat:no-repeat;background-position:25% center;background-size:200px;margin-top:50px;flex-direction:column;text-align:center}#block-mainheader2025q1 a{padding:0.2em}#block-mainheader2026q1 .row>.col-md-4:first-child{background-image:url("https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2026/04/26131255/2026q1-piousbox-logo-merged.350x-tiny.png");background-repeat:no-repeat;background-position:25% center}.region-footer .block-language ul.links,.region-footer .menu--issues ul.menu,.region-footer .menu--pages ul.menu{display:flex;flex-direction:row;flex-wrap:wrap}.region-footer .block-language ul.links li,.region-footer .menu--issues ul.menu li,.region-footer .menu--pages ul.menu li{padding:0.5em}.region-footer .maxwidth{flex-wrap:nowrap}@media (max-width: 768px){.region-footer .maxwidth{flex-wrap:wrap}}.site-name{text-align:center;display:flex;flex-direction:column}.view-_023q3-scrum-view .view-content{display:flex;flex-wrap:wrap}
+html.dark {
+  --bg-0: #1e4867;
+  --bg: #547a95;
+  --bg-2: #70a3c7;
+  --text: #f5f7fa;
+  --text-muted: #c9d4df;
+  --primary: #7cc4ff;
+  --primary-1: #a6ddff;
+  --primary-2: #c4dfef;
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: rgba(0, 0, 0, 0.35);
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --error: #fb7185;
+  /* Global */
+  /* Headings */
+  /* Paragraphs */
+  /* Links */
+  /* Containers */
+  /* Cards */
+  /* Buttons */
+  /* Inputs */
+  /* Placeholder text */
+  /* Lists */
+  /* Tables */
+  /* Code */
+  /* Horizontal rule */
+  /* Utility text */
+  /* Scrollbar (WebKit) */ }
+  html.dark body {
+    margin: 0;
+    background: var(--bg-0);
+    color: var(--text);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.6; }
+  html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 {
+    color: var(--text);
+    font-weight: 600; }
+  html.dark p {
+    color: var(--text); }
+  html.dark a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease; }
+  html.dark a.is-active {
+    color: var(--primary-2); }
+  html.dark a:hover {
+    color: var(--primary-1);
+    text-decoration: underline; }
+  html.dark a:visited {
+    color: var(--primary-1); }
+  html.dark section, html.dark article, html.dark aside {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 6px 18px var(--shadow); }
+  html.dark article.node--type-issue,
+  html.dark article.node--type-advanced-page {
+    background: var(--bg-0);
+    border: 0;
+    box-shadow: none; }
+  html.dark .card {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px; }
+  html.dark button {
+    background: var(--primary);
+    color: #062033;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease; }
+  html.dark button:hover {
+    background: var(--primary-1); }
+  html.dark img {
+    border-radius: 5px; }
+  html.dark input, html.dark textarea, html.dark select {
+    background: var(--bg-2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    outline: none; }
+  html.dark input:focus, html.dark textarea:focus, html.dark select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(124, 196, 255, 0.25); }
+  html.dark ::placeholder {
+    color: var(--text-muted); }
+  html.dark ul, html.dark ol {
+    color: var(--text); }
+  html.dark table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg);
+    border-radius: 10px;
+    overflow: hidden; }
+  html.dark th, html.dark td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    color: var(--text); }
+  html.dark th {
+    background: var(--bg-2); }
+  html.dark code {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #d6f0ff; }
+  html.dark pre {
+    background: #0f2b3d;
+    padding: 12px;
+    border-radius: 10px;
+    overflow-x: auto;
+    color: #e6f2ff; }
+  html.dark hr {
+    border: none;
+    border-top: 1px solid var(--border); }
+  html.dark .text-muted {
+    color: var(--text-muted); }
+  html.dark ::-webkit-scrollbar {
+    width: 10px; }
+  html.dark ::-webkit-scrollbar-track {
+    background: var(--surface); }
+  html.dark ::-webkit-scrollbar-thumb {
+    background: #2f6a8f;
+    border-radius: 10px; }
+  html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #3f86b3; }
+
+html:not(.dark) body {
+  background: #fff6e8; }
+
+html:not(.dark) .Card,
+html:not(.dark) .Teaser {
+  background: white; }
+
+/* B */
+.border-bottom {
+  border-bottom: 1px solid black; }
+
+/* C */
+/* E */
+/* G */
+.GalleryPhotos .Card label {
+  word-break: break-word; }
+
+/* H */
+#block-mainheader2025q1 {
+  background-image: url("https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2024/11/18145302/300x300_piousbox-logo-bw.png");
+  background-repeat: no-repeat;
+  background-position: 25% center;
+  background-size: 200px;
+  padding-top: 50px;
+  flex-direction: column;
+  text-align: center; }
+  #block-mainheader2025q1 a {
+    padding: 0.2em; }
+
+#block-mainheader2026q1 .row > .col-md-4:first-child {
+  background-image: url("https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2026/04/26131255/2026q1-piousbox-logo-merged.350x-tiny.png");
+  background-repeat: no-repeat;
+  background-position: 25% center; }
+
+/* R */
+.region-footer .block-language ul.links,
+.region-footer .menu--issues ul.menu,
+.region-footer .menu--pages ul.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .region-footer .block-language ul.links li,
+  .region-footer .menu--issues ul.menu li,
+  .region-footer .menu--pages ul.menu li {
+    padding: 0.5em; }
+
+.region-footer .maxwidth {
+  flex-wrap: nowrap; }
+
+@media (max-width: 768px) {
+  .region-footer .maxwidth {
+    flex-wrap: wrap; } }
+
+/* S */
+.site-name {
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+
+/* V */
+.view-_023q3-scrum-view .view-content {
+  display: flex;
+  flex-wrap: wrap; }
